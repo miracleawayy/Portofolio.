@@ -1,0 +1,288 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Beranda */
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    padding: 0 10%;
+}
+
+.landing-page .left {
+    flex: 1;
+    color: #333;
+}
+
+.landing-page h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #2C3E50;
+    letter-spacing: 1px;
+}
+
+.landing-page p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.landing-page .right {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-img {
+    width: 70%;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Bagian Tentang */
+.about {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.bio {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+.bold {
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Bagian Pendidikan */
+.education {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.education p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+/* Bagian Keahlian */
+.skills {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2C3E50;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Progress bar untuk masing-masing keahlian */
+.html { background-color: #e44d26; width: 70%; }
+.css { background-color: #2965f1; width: 40%; }
+.js { background-color: #f0db4f; width: 10%; }
+.uiux { background-color: #00bcd4; width: 50%; }
+.mysql { background-color: #00758f; width: 10%; }
+
+/* Bagian Kontak */
+.contact {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+form input, form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #3498db;
+}
+
+form button {
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Ikon Media Sosial */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 15px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.instagram {
+    background-color: #e4405f;
+}
+
+.social-icon.x {
+    background-color: #1da1f2;
+}
+
+.social-icon.whatsapp {
+    background-color: #25d366;
+}
+
+
+/* Efek ketika section muncul */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

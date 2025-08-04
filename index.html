@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN untuk ikon sosial media -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#kontak">Hubungi Saya</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Beranda -->
+    <section id="beranda" class="landing-page">
+        <div class="left">
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>Saya seorang Developer Web dengan passion di desain dan teknologi.</p>
+        </div>
+        <div class="right">
+            <img src="image.png" alt="Foto Profil" class="profile-img">
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="about">
+        <h2>Tentang Saya</h2>
+        <div class="bio">
+            <h3 class="bold">Nama: Saepul Anwar</h3>
+            <h3 class="bold">Jenis Kelamin: Laki - Laki</h3>
+            <h3 class="bold">Agama: Islam</h3>
+            <h3 class="bold">Pekerjaan: Siswa</h3>
+            <h3 class="bold">Alamat: Desa Maprah ,Kec Panjalu , Kab Ciamis , Jawa Barat, Indonesia</h3>
+            <h3 class="bold">Email: anwarsquad0123@gmail.com</h3>
+        </div>
+    </section>
+
+    <!-- Bagian Pendidikan -->
+    <section class="education">
+        <h2>Pendidikan</h2>
+        <p>TK Galuh MAPARAH (2014 - 2015)</p>
+            <P>MIN 1 CIAMIS (2015 -2021)</P>
+            <p>SMPN 1 PANJALU (2021 -2024)</p>
+            <p>SMKN 1 KAWALI (2024 -)</p>
+        </p>
+    </section>
+
+   <!-- Bagian Keahlian -->
+<section class="skills">
+    <h2>Keahlian</h2>
+    <div class="skill">
+        <h3>HTML</h3>
+        <div class="progress-bar">
+            <div class="progress html"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>CSS</h3>
+        <div class="progress-bar">
+            <div class="progress css"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+            <div class="progress js"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>UI/UX</h3>
+        <div class="progress-bar">
+            <div class="progress uiux"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <h3>MySQL</h3>
+        <div class="progress-bar">
+            <div class="progress mysql"></div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="contact">
+        <h2>Hubungi Saya</h2>
+        <form id="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        
+         <!-- Ikon Media Sosial -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/username" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/username" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/username" target="_blank" class="social-icon x">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://wa.me/phone-number" target="_blank" class="social-icon whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
